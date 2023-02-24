@@ -1,0 +1,24 @@
+---
+title: Learning Bitcoin: Inputs, Outputs, and the UTXO Model
+description: "An exporation of bitcoin's fundamental building blocks."
+date: December 12 2022
+---
+
+# Learning Bitcoin: Inputs, Outputs, and the UTXO Model
+
+Bitcoin is a global, permissionless, peer-to-peer network that allows users to construct transactions in order to send value anywhere on the planet. If one wishes to understand the bitcoin network, it is important to understand the individual ledger entries which make up blocks: transactions.
+
+This piece will cover:
+
+- Transactions on the bitcoin network — what are they, and how do they work?
+- The significance of transaction outputs, in bitcoin.
+- A brief exploration of the “UTXO” model and why it is important for bitcoin.
+- Output locks as a means to safeguard against double-spending.
+
+## Transaction Flow
+
+A transaction on the bitcoin network is a single line of data that contains information on the amount being sent, the account it is being sent from and the account it is being sent to. When a user makes a transaction, the transaction data is transmitted to the bitcoin network — via a node — which then relays the transaction to peer nodes until it has proliferated the entire network.
+
+A few points before going further:
+
+1. In bitcoin parlance, “node” is a concise way of referring to a computer that is running a version of the bitcoin software and relaying information around the network.
