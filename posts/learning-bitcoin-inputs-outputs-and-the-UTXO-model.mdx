@@ -21,4 +21,18 @@ A transaction on the bitcoin network is a single line of data that contains info
 
 A few points before going further:
 
-1. In bitcoin parlance, “node” is a concise way of referring to a computer that is running a version of the bitcoin software and relaying information around the network.
+1. In bitcoin parlance, [node](https://learnmeabitcoin.com/beginners/nodes) is a concise way of referring to a computer that is running a version of the bitcoin software and relaying information around the network.
+
+2. Nodes are connected to other computers running the same program, creating a network.
+
+3. Before relaying data across the network, nodes validate that a particular transaction, or group of transactions (block), complies with a programmed set of rules to establish transaction validity.
+
+4. Anyone can run a node on the bitcoin network; it can be done with an old laptop, desktop, or dedicated hardware device. All that is required is an internet connection and sufficient storage capacity to maintain a copy of the blockchain.
+
+In summary, nodes have three main functions: follow rules, share information and keep a copy of confirmed transactions (the blockchain).
+
+Once a node has validated and propagated the transaction throughout the network, the transaction sits in a queue called a Memory Pool, or [mempool](https://mempool.space/). These queues serve as waiting areas for transactions yet to be added to the newest block. Note that even though the transaction has been deemed valid by nodes, it has yet to be added to a block, and thus, the transaction’s status is ‘pending’ at this point.
+
+This is where the mining process comes in — miners have specialized nodes whose purpose is to batch pending transactions into blocks, following a resource-intensive data compression process. While miners (or pools of miners) receive a reward for mining the latest block, they are also incentivized by transaction fees — miners tend to give preference to transactions with higher fees.
+
+At the point when a transaction is mined into a block, its status moves from ‘pending’ to ‘confirmed.’ Three confirmations are generally viewed as the minimum threshold for a bitcoin transaction to be considered ‘settled’.
